@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:rgb(83, 1, 83);
+
+body{
+    background-image: url(BG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+
+}
+header.logo{
+    font-size: 5rem;
+}
+.logo a{
+    text-decoration: none;
+    color:var(--primary-color);
+    font-size: 2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 1rem;
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul ul li{
+    display: list-item;
+    position: relative;
+    width: 150px;
+    float: none;
+}
+nav ul li a:hover>ul{
+    display: block;
+
+
+
+}
+ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+.button{
+    font-size: 2 rem;
+    display: none;
+    cursor: pointer;
+}
+.button i{
+    color: var(--primary-color);
+}
+.section_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    height: 70%;
+}
+.section_menu article{
+    text-align: center;
+}
+.section_menu article h1{
+    font-size: 3rem;margin: 1.5rem 0rem;
+    color: azure;
+
+}
+.section_menu article p{
+    padding: 0rem 2rem ;
+    margin: 1.5rem 0rem;
+    color: white;
+    font-size: 1rem;
+
+}
+Button{
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    background-color: yellow;
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+Button:hover{
+    background-color: brown;
+    color: antiquewhite;
+}
+footer{
+    text-align: center;
+    color: azure;
+    width: 100%;
+    padding: 2rem 0rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+}
+@media screen and (max-width:768px){
+    nav ul{
+        display: none;
+    }
+    .button{
+        display: inline;
+    }
+    .logo a{
+        color: wheat;
+    }
+
+} 
